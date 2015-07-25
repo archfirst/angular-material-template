@@ -1,0 +1,20 @@
+md-list .md-button {
+    color: inherit;
+    font-weight: 500;
+    text-align: left;
+    width: 100%;
+
+    // Make sure the button is the same height as md-list-item and there is no vertical margin.
+    // This makes sure that the button is fully highlighted when selected.
+    margin: 0;
+    min-height: 48px;
+    line-height: 48px;
+}
+
+md-list .md-button.selected {
+    color: #03a9f4;
+}
+
+md-sidenav md-list {
+    padding: 0px 0px 8px 0px;
+}
