@@ -10,6 +10,7 @@
         'app.appbar',
         'app.approot',
         'app.dashboard',
+        'app.login',
         'app.sidenav'
     ]);
 })();

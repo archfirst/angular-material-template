@@ -26,15 +26,24 @@
     }
 
     // ----- ControllerFunction -----
-    ControllerFunction.$inject = ['$mdSidenav'];
+    ControllerFunction.$inject = ['$mdDialog', '$mdSidenav'];
 
     /* @ngInject */
-    function ControllerFunction($mdSidenav) {
+    function ControllerFunction($mdDialog, $mdSidenav) {
         var vm = this;
+        vm.login = login;
         vm.toggleSidenav = toggleSidenav;
 
         function toggleSidenav() {
             $mdSidenav('left').toggle();
+        }
+
+        function login() {
+            $mdDialog.show({
+                templateUrl: 'components/login/login-dialog.html',
+                controller: 'LoginDialogController',
+                controllerAs: 'vm'
+            });
         }
     }
 

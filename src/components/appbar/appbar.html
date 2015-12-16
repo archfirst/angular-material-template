@@ -1,8 +1,10 @@
 <md-toolbar layout="row">
     <md-button class="md-icon-button" hide-gt-sm ng-click="vm.toggleSidenav()" aria-label="Show Navbar">
-        <md-icon md-svg-icon="menu"></md-icon>
+        <md-icon md-svg-icon="navigation:menu"></md-icon>
     </md-button>
     <div class="md-toolbar-tools">
         <span>Portfolio Manager</span>
+        <span flex></span>
+        <md-button ng-click="vm.login()" class="md-raised md-primary md-hue-2">Login</md-button>
     </div>
 </md-toolbar>

@@ -43,10 +43,10 @@
         exceptionHandlerProvider.configure(config.appErrorPrefix);
 
         $mdIconProvider
-            .icon('menu', 'images/menu.svg', 24);
+            .iconSet('content', 'images/content-icons.svg', 24)
+            .iconSet('navigation', 'images/navigation-icons.svg', 24);
 
         $mdThemingProvider.theme('default')
-            .primaryPalette('blue-grey')
-            .accentPalette('red');
+            .primaryPalette('blue-grey');
     }
 })();

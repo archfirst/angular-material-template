@@ -13,15 +13,15 @@
     "tests"
   ],
   "devDependencies": {
-    "angular-mocks": "~1.4.7",
+    "angular-mocks": "~1.4.8",
     "bardjs": "~0.1.8"
   },
   "dependencies": {
-    "angular": "~1.4.7",
-    "angular-animate": "~1.4.7",
-    "angular-aria": "1.4.7",
-    "angular-material": "~0.11.2",
-    "angular-sanitize": "~1.4.7",
+    "angular": "~1.4.8",
+    "angular-animate": "~1.4.8",
+    "angular-aria": "1.4.8",
+    "angular-material": "~0.11.4",
+    "angular-sanitize": "~1.4.8",
     "angular-ui-router": "~0.2.15",
     "lodash": "~3.10.1"
   }
