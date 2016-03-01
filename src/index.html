@@ -1,22 +1,22 @@
 <!DOCTYPE html>
 <html data-ng-app="app" ng-strict-di>
 <head>
-    <style>
-        /* This helps the ng-show/ng-hide animations start at the right place. */
-        /* Since Angular has this but needs to load, this gives us the class early. */
-        .ng-hide {
-            display: none !important;
-        }
-    </style>
+    <title>Angular Template</title>
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no"/>
     <link rel="shortcut icon" href="images/favicon.png">
     <base href="/">
 
-    <title>Angular Material Template</title>
-
     <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Roboto:400,500,700,400italic">
+
+    <style type="text/css">
+        /** Hide when Angular is not yet loaded and initialized */
+        [ng\:cloak], [ng-cloak], [data-ng-cloak], [x-ng-cloak], .ng-cloak, .x-ng-cloak {
+            display: none !important;
+        }
+    </style>
 
     <!-- build:css styles/lib.css -->
     <link href="/bower_components/angular-material/angular-material.css" rel="stylesheet" type="text/css">
@@ -30,7 +30,7 @@
     <!-- endbuild -->
 </head>
 
-<body>
+<body ng-cloak>
 
     <tmpl-approot layout="column"></tmpl-approot>
 

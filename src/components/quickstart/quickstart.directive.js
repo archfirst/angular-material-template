@@ -2,9 +2,9 @@
 
     'use strict';
 
-    angular.module('app.accounts')
-        .directive('tmplAccounts', directiveFunction)
-        .controller('AccountsController', ControllerFunction);
+    angular.module('app.quickstart')
+        .directive('tmplQuickstart', directiveFunction)
+        .controller('QuickstartController', ControllerFunction);
 
 
     // ----- directiveFunction -----
@@ -15,10 +15,10 @@
 
         var directive = {
             restrict: 'E',
-            templateUrl: 'components/accounts/accounts.html',
+            templateUrl: 'components/quickstart/quickstart.html',
             scope: {
             },
-            controller: 'AccountsController',
+            controller: 'QuickstartController',
             controllerAs: 'vm'
         };
 
@@ -35,7 +35,7 @@
         activate();
 
         function activate() {
-            logger.log('Activated Accounts View');
+            logger.log('Activated Quick Start View');
         }
     }
 

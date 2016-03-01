@@ -1,10 +1,10 @@
 # Angular Material Template
-This template provides a starter project that implements best practices in coding, building and testing AngularJS applications using Material design. Features include:
+This template provides a starter project that implements best practices in coding, building and testing AngularJS applications using Material Design. Features include:
 - A well-organized component hierarchy starting from `approot`. Components are implemented using directives (no dangling controllers). This provides a good architectural direction until Angular 2.0 becomes available.
 - Follows AngularJS style guidelines (e.g. `controller as` syntax).
 - Uses [AngularUI Router](https://github.com/angular-ui/ui-router) for flexible routing and nested views.
-- Uses [Angular Material](https://material.angularjs.org) to implement an interface that conforms to Material design.
-- Provides logging and exception handling frameworks with toaster notifications.
+- Uses [Angular Material](https://material.angularjs.org) to implement an interface that conforms to Material Design.
+- Provides logging and exception handling frameworks.
 - Provides a Gulp based build system – code changes are reflected in the browser immediately.
 - Uses Karma, Mocha and Chai for testing.
 

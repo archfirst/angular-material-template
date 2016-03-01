@@ -1,9 +1,10 @@
-<tmpl-appbar></tmpl-appbar>
+<tmpl-toolbar></tmpl-toolbar>
 
-<div flex layout="row">
-    <tmpl-sidenav layout="column"></tmpl-sidenav>
+<md-tabs md-border-bottom>
+    <md-tab label="home" ui-sref="home" ui-sref-active="selected"></md-tab>
+    <md-tab label="quickstart" ui-sref="quickstart" ui-sref-active="selected"></md-tab>
+</md-tabs>
 
-    <md-content flex layout-padding id="content">
-        <div ui-view></div>
-    </md-content>
-</div>
+<md-content flex layout-padding id="content">
+    <div ui-view></div>
+</md-content>

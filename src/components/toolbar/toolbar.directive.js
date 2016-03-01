@@ -2,9 +2,9 @@
     'use strict';
 
     angular
-        .module('app.appbar')
-        .directive('tmplAppbar', directiveFunction)
-        .controller('AppbarController', ControllerFunction);
+        .module('app.toolbar')
+        .directive('tmplToolbar', directiveFunction)
+        .controller('ToolbarController', ControllerFunction);
 
 
     // ----- directiveFunction -----
@@ -15,10 +15,10 @@
 
         var directive = {
             restrict: 'E',
-            templateUrl: 'components/appbar/appbar.html',
+            templateUrl: 'components/toolbar/toolbar.html',
             scope: {
             },
-            controller: 'AppbarController',
+            controller: 'ToolbarController',
             controllerAs: 'vm'
         };
 
@@ -26,17 +26,12 @@
     }
 
     // ----- ControllerFunction -----
-    ControllerFunction.$inject = ['$mdDialog', '$mdSidenav'];
+    ControllerFunction.$inject = ['$mdDialog'];
 
     /* @ngInject */
-    function ControllerFunction($mdDialog, $mdSidenav) {
+    function ControllerFunction($mdDialog) {
         var vm = this;
         vm.login = login;
-        vm.toggleSidenav = toggleSidenav;
-
-        function toggleSidenav() {
-            $mdSidenav('left').toggle();
-        }
 
         function login() {
             $mdDialog.show({

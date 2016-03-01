@@ -1,20 +1,20 @@
 /* jshint -W117 */
-describe('Dashboard', function() {
+describe('Home', function() {
     'use strict';
 
     var controller;
 
     beforeEach(function() {
-        bard.appModule('app.dashboard');
+        bard.appModule('app.home');
         bard.inject('$rootScope', '$controller');
     });
 
     beforeEach(function() {
-        controller = $controller('DashboardController');
+        controller = $controller('HomeController');
         $rootScope.$apply();
     });
 
-    describe('Dashboard controller', function() {
+    describe('Home controller', function() {
         it('dummy test', function() {
         });
     });

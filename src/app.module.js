@@ -6,11 +6,10 @@
         'app.core',
 
         // Features (listed alphabetically)
-        'app.accounts',
-        'app.appbar',
+        'app.quickstart',
         'app.approot',
-        'app.dashboard',
+        'app.home',
         'app.login',
-        'app.sidenav'
+        'app.toolbar'
     ]);
 })();

@@ -1,7 +1,7 @@
 (function() {
     'use strict';
 
-    angular.module('app.accounts', [
+    angular.module('app.home', [
         'app.core'
     ]);
 })();

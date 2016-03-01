@@ -2,9 +2,9 @@
 
     'use strict';
 
-    angular.module('app.dashboard')
-        .directive('tmplDashboard', directiveFunction)
-        .controller('DashboardController', ControllerFunction);
+    angular.module('app.home')
+        .directive('tmplHome', directiveFunction)
+        .controller('HomeController', ControllerFunction);
 
 
     // ----- directiveFunction -----
@@ -15,10 +15,10 @@
 
         var directive = {
             restrict: 'E',
-            templateUrl: 'components/dashboard/dashboard.html',
+            templateUrl: 'components/home/home.html',
             scope: {
             },
-            controller: 'DashboardController',
+            controller: 'HomeController',
             controllerAs: 'vm'
         };
 
@@ -35,7 +35,7 @@
         activate();
 
         function activate() {
-            logger.log('Activated Dashboard View');
+            logger.log('Activated Home View');
         }
     }
 

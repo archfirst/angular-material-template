@@ -15,14 +15,14 @@
         $urlRouterProvider.otherwise('/');
 
         $stateProvider
-            .state('dashboard', {
+            .state('home', {
                 url: '/',
-                template: '<tmpl-dashboard class="page"></tmpl-dashboard>'
+                template: '<tmpl-home></tmpl-home>'
             })
 
-            .state('accounts', {
-                url: '/accounts',
-                template: '<tmpl-accounts class="page"></tmpl-accounts>'
+            .state('quickstart', {
+                url: '/quickstart',
+                template: '<tmpl-quickstart></tmpl-quickstart>'
             });
     }
 })();

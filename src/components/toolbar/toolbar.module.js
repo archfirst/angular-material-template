@@ -1,7 +1,7 @@
 (function() {
     'use strict';
 
-    angular.module('app.appbar', [
+    angular.module('app.toolbar', [
         'app.core'
     ]);
 })();
