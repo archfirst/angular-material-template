@@ -67,5 +67,6 @@
 
         $mdThemingProvider.theme('default')
             .primaryPalette('app-blue')
-            .accentPalette('app-red');    }
+            .accentPalette('app-red');
+    }
 })();
